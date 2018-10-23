@@ -134,8 +134,20 @@ input[type=checkbox], input[type=radio] {
 .md-hidden {
     display: none;
 }
+.filter-btn{
+    padding: 0;
+    font-size: 11px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+#hideDiv{
+    display:none;
+}
 
-
+.filter-btn a {
+    text-decoration: none;
+    color: grey;
+}
 
 /*Mobile*/
 @media (max-width: 576px) {

@@ -15,7 +15,7 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <!-- favicon Image -->
-    <link rel="shortcut icon" href="favicon.ico">
+   
 </head>
 
 <body>
@@ -41,10 +41,19 @@
                         <div class="form-group col-md-10">
                             <input type="text" class="form-control" id="" placeholder="Anahein CA 4325">
                         </div>
-                        <div class="form-group col-md-2 xs-hidden">
-                            <p>Filter</p>
+                        <div class="form-group col-md-2 xs-hidden filter-btn">
+                            <a onclick="hideFun()">FILTER BY <i id="hideIcon" class="fas fa-plus"></i></a>
                         </div>
                     </div>
+                    <!-- Filter -->
+                    <div class="xs-hidden" id="hideDiv">
+                        <form action="/action_page.php" method="get">
+                            <input type="checkbox" name="vehicle" value="Bike"> Specialty<br>
+                            <input type="checkbox" name="vehicle" value="Car" checked> Factory Outlet<br>
+                            <input type="checkbox" name="vehicle" value="Car" checked> Authorize Retailer<br>
+                        </form>
+                    </div>
+                    <!-- Filter -->
                     <hr class="xs-hidden">
                     <!-- Mobile Section Start-->
                     <div class="md-hidden full-width-tabs">
@@ -188,6 +197,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    function hideFun() {
+        var x = document.getElementById("hideDiv");
+        var y = document.getElementById("hideIcon");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            //y.classList.toggle("fa-plus");
+            y.classList.add("fa-plus");
+            y.classList.remove("fa-minus");
+        } else {
+            x.style.display = "block";
+            y.classList.add("fa-minus");
+            y.classList.remove("fa-plus");
+            //y.classList.toggle("fa-minus");
+        }
+    }
+    </script>
 </body>
 
 </html>
