@@ -26,72 +26,155 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- Map card start-->
-                <div class="col-md-8 col-sm-12 col-12 pad-0">
+                <div class="col-md-8 col-sm-12 col-12 pad-0 xs-hidden">
                     <div class="map-card"></div>
                 </div>
                 <!-- Map card end-->
                 <!-- Find card start-->
                 <div class="col-md-4 col-sm-12 col-12 find-section">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 mob-text-center">
                             <h5 class="header-text">FIND STORES</h5>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-10">
-                            <input type="text" class="form-control" id="">
+                            <input type="text" class="form-control" id="" placeholder="Anahein CA 4325">
                         </div>
-                        <div class="form-group col-md-2">
+                        <div class="form-group col-md-2 xs-hidden">
                             <p>Filter</p>
                         </div>
                     </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-12 location-area">
-                            <div class="pin-img"><span class="location-num">1</span></div>
-                            <span class="pad-l-1 pad-t-05">3.19 miles away</span>
+                    <hr class="xs-hidden">
+                    <!-- Mobile Section Start-->
+                    <div class="md-hidden full-width-tabs">
+                        <ul class="nav nav-pills nav-tabs">
+                            <li class="active"><a data-toggle="pill" href="#home"><i class="fas fa-list-ul"></i> List</a></li>
+                            <li><a data-toggle="pill" href="#menu1"><i class="fas fa-map-marker-alt"></i> Map</a></li>
+                            <li><a data-toggle="pill" href="#menu2"><i class="fas fa-filter"></i> Filter</a></li>
+                        </ul>
+                        <div class="tab-content m-t-1">
+                            <div id="home" class="tab-pane fade in active">
+                                <!-- Location Section Start -->
+                                <div class="row">
+                                    <div class="col-md-12 location-area">
+                                        <div class="pin-img"><span class="location-num">1</span></div>
+                                        <span class="pad-l-1 pad-t-05">3.19 miles away</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 location-text">
+                                        <h5 class="f-w-700">LOCATION A</h5>
+                                        <p>100 East Washington</p>
+                                        <p>City, ST </p>
+                                        <p>555-555-555</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <button type="button" class="btn custom-btn btn-default bg-dark col-md-12 mob-w-100">GET DIRECTIONS</button>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 mob-w-100">
+                                        <button type="button" class="btn custom-btn btn-default bg-dark col-md-12 mob-w-100">MORE INFO</button>
+                                    </div>
+                                    <div class="col-md-12 pad-t-1 mob-w-100">
+                                        <button type="button" class="btn custom-btn btn-default bg-yellow col-md-12 mob-w-100">VIEW STORE PAGE</button>
+                                    </div>
+                                </div>
+                                <!-- Location Section End -->
+                                <hr>
+                                <!-- Location Section Start -->
+                                <div class="row">
+                                    <div class="col-md-12 location-area">
+                                        <div class="pin-img"><span class="location-num">2</span></div>
+                                        <span class="pad-l-1 pad-t-05">3.19 miles away</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 location-text">
+                                        <h5 class="f-w-700">LOCATION B</h5>
+                                        <p>100 East Washington</p>
+                                        <p>City, ST </p>
+                                        <p>555-555-555</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <button type="button" class="btn custom-btn btn-default bg-dark col-md-12 mob-w-100">GET DIRECTIONS</button>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 mob-w-100">
+                                        <button type="button" class="btn custom-btn btn-default bg-dark col-md-12 mob-w-100">MORE INFO</button>
+                                    </div>
+                                    <div class="col-md-12 pad-t-1 mob-w-100">
+                                        <button type="button" class="btn custom-btn btn-default bg-yellow col-md-12 mob-w-100">VIEW STORE PAGE</button>
+                                    </div>
+                                </div>
+                                <!-- Location Section Ends -->
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                                <!-- Map card start-->
+                                <div class="col-md-8 col-sm-12 col-12 pad-0">
+                                    <div class="map-card"></div>
+                                </div>
+                                <!-- Map card end-->
+                            </div>
+                            <div id="menu2" class="tab-pane fade">
+                                <form action="/action_page.php" method="get">
+                                    <input type="checkbox" name="vehicle" value="Bike"> Specialty<br>
+                                    <input type="checkbox" name="vehicle" value="Car" checked> Factory Outlet<br>
+                                    <input type="checkbox" name="vehicle" value="Car" checked> Authorize Retailer<br>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 location-text">
-                            <h5 class="f-w-700">LOCATION A</h5>
-                            <p>100 East Washington</p>
-                            <p>City, ST </p>
-                            <p>555-555-555</p>
+                    <!-- Mobile Section ends -->
+                    <div class="xs-hidden">
+                        <!-- Location Section Start -->
+                        <div class="row">
+                            <div class="col-md-12 location-area">
+                                <div class="pin-img"><span class="location-num">1</span></div>
+                                <span class="pad-l-1 pad-t-05">3.19 miles away</span>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                            <button type="button" class="btn custom-btn btn-default bg-dark col-md-12 mob-w-100">GET DIRECTIONS</button>
+                        <div class="row">
+                            <div class="col-md-12 location-text">
+                                <h5 class="f-w-700">LOCATION A</h5>
+                                <p>100 East Washington</p>
+                                <p>City, ST </p>
+                                <p>555-555-555</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <button type="button" class="btn custom-btn btn-default bg-dark col-md-12 mob-w-100">GET DIRECTIONS</button>
+                            </div>
+                            <div class="col-md-6 col-sm-6 mob-w-100">
+                                <button type="button" class="btn custom-btn btn-default bg-dark col-md-12 mob-w-100">MORE INFO</button>
+                            </div>
+                            <div class="col-md-12 pad-t-1 mob-w-100">
+                                <button type="button" class="btn custom-btn btn-default bg-yellow col-md-12 mob-w-100">VIEW STORE PAGE</button>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-sm-6 mob-w-100">
-                            <button type="button" class="btn custom-btn btn-default bg-dark col-md-12 mob-w-100">MORE INFO</button>
+                        <!-- Location Section End -->
+                        <hr>
+                        <!-- Location Section Start -->
+                        <div class="row">
+                            <div class="col-md-12 location-area">
+                                <div class="pin-img"><span class="location-num">2</span></div>
+                                <span class="pad-l-1 pad-t-05">3.19 miles away</span>
+                            </div>
                         </div>
-                        <div class="col-md-12 pad-t-1 mob-w-100">
-                            <button type="button" class="btn custom-btn btn-default bg-yellow col-md-12 mob-w-100">VIEW STORE PAGE</button>
+                        <div class="row">
+                            <div class="col-md-12 location-text">
+                                <h5 class="f-w-700">LOCATION B</h5>
+                                <p>100 East Washington</p>
+                                <p>City, ST </p>
+                                <p>555-555-555</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <button type="button" class="btn custom-btn btn-default bg-dark col-md-12 mob-w-100">GET DIRECTIONS</button>
+                            </div>
+                            <div class="col-md-6 col-sm-6 mob-w-100">
+                                <button type="button" class="btn custom-btn btn-default bg-dark col-md-12 mob-w-100">MORE INFO</button>
+                            </div>
+                            <div class="col-md-12 pad-t-1 mob-w-100">
+                                <button type="button" class="btn custom-btn btn-default bg-yellow col-md-12 mob-w-100">VIEW STORE PAGE</button>
+                            </div>
                         </div>
-                    </div>
-                    <hr>
-                     <div class="row">
-                        <div class="col-md-12 location-area">
-                            <div class="pin-img"><span class="location-num">2</span></div>
-                            <span class="pad-l-1 pad-t-05">3.19 miles away</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 location-text">
-                            <h5 class="f-w-700">LOCATION B</h5>
-                            <p>100 East Washington</p>
-                            <p>City, ST </p>
-                            <p>555-555-555</p>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <button type="button" class="btn custom-btn btn-default bg-dark col-md-12 mob-w-100">GET DIRECTIONS</button>
-                        </div>
-                        <div class="col-md-6 col-sm-6 mob-w-100">
-                            <button type="button" class="btn custom-btn btn-default bg-dark col-md-12 mob-w-100">MORE INFO</button>
-                        </div>
-                        <div class="col-md-12 pad-t-1 mob-w-100">
-                            <button type="button" class="btn custom-btn btn-default bg-yellow col-md-12 mob-w-100">VIEW STORE PAGE</button>
-                        </div>
+                        <!-- Location Section Ends -->
                     </div>
                 </div>
             </div>

@@ -21,10 +21,10 @@
     font-weight: 700;
 }
 
-.pin-img{
-	background-image: url("../images/pin.png");
-	width: 30px;
-	height:30px;
+.pin-img {
+    background-image: url("../images/pin.png");
+    width: 30px;
+    height: 30px;
     background-repeat: no-repeat;
     background-size: contain;
     -webkit-background-size: cover;
@@ -32,58 +32,128 @@
     -o-background-size: cover;
     background-size: cover;
 }
-.location-area{
-	display: inline-flex;
+
+.location-area {
+    display: inline-flex;
     font-size: 13px;
 }
-.location-num{
-	position: relative;
+
+.location-num {
+    position: relative;
     left: 9px;
     top: 2px;
     color: #fff;
 }
-.bg-dark{
-      background-color: #322a2a;
-   color: #fff;
-  }
 
-  .custom-btn{
-   border-radius: 0px;
-   font-weight: 500;
-   font-size: 13px;
-  }
-
-  .bg-yellow{
-      background-color: #d88929;
-   color: #fff;
-  }
-
-
-
-.pad-0{
-	padding: 0px;
-}
-.pad-l-1{
-	padding-left: 1rem;
-}
-.pad-t-05{
-	padding-top: 0.5rem;
-}
-.pad-t-1{
-	padding-top: 1rem;
-}
-.f-w-700{
-	font-weight: 700;
+.bg-dark {
+    background-color: #322a2a;
+    color: #fff;
 }
 
+.custom-btn {
+    border-radius: 0px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.bg-yellow {
+    background-color: #d88929;
+    color: #fff;
+}
+
+.full-width-tabs>ul.nav.nav-tabs {
+    display: table;
+    width: 100%;
+    table-layout: auto;
+}
+
+.full-width-tabs>ul.nav.nav-tabs>li {
+    float: none;
+    display: table-cell;
+}
+
+.full-width-tabs>ul.nav.nav-tabs>li>a {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.take-all-space-you-can {
+    width: 100%;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #337ab700;
+    border: none;
+    color: #fbd618 !important;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: #eee0;
+}
+
+.nav-tabs>li>a:hover {
+    border-color: transparent;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin: 10px 0 0;
+}
+
+
+
+
+.pad-0 {
+    padding: 0px;
+}
+
+.pad-l-1 {
+    padding-left: 1rem;
+}
+
+.pad-t-05 {
+    padding-top: 0.5rem;
+}
+
+.pad-t-1 {
+    padding-top: 1rem;
+}
+.m-t-1{
+  margin-top: 1rem;
+}
+.f-w-700 {
+    font-weight: 700;
+}
+
+.md-hidden {
+    display: none;
+}
 
 
 
 /*Mobile*/
 @media (max-width: 576px) {
 
-	.mob-w-100{
-		width: 100%
-	}
+    .mob-w-100 {
+        width: 100%
+    }
+
+    .xs-hidden {
+        display: none;
+    }
+    .mob-text-center{
+      text-align: center;
+    }
+    .map-card {
+    background-image: url("../images/mobile_map.png");
+    }
+    .md-hidden{
+      display: inline;
+    }
 }
-  
